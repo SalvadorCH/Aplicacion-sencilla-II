@@ -41,15 +41,15 @@ public class FragmentB extends Fragment {
         numeros.add(new Word("ocho", "eigth", R.drawable.family_younger_sister));
         numeros.add(new Word("nueve", "nain", R.drawable.family_younger_sister));
         numeros.add(new Word("diez", "ten", R.drawable.family_younger_sister));
-        numeros.add(new Word("uno", "one"));
-        numeros.add(new Word("dos", "two"));
-        numeros.add(new Word("tres", "three"));
-        numeros.add(new Word("cuatro", "four"));
-        numeros.add(new Word("cinco", "five"));
-        numeros.add(new Word("seis", "six"));
-        numeros.add(new Word("siete", "seven"));
-        numeros.add(new Word("ocho", "eigth"));
-        numeros.add(new Word("nueve", "nain"));
+        numeros.add(new Word("uno", "one", R.drawable.family_younger_sister));
+        numeros.add(new Word("dos", "two", R.drawable.family_younger_sister));
+        numeros.add(new Word("tres", "three", R.drawable.family_younger_sister));
+        numeros.add(new Word("cuatro", "four", R.drawable.family_younger_sister));
+        numeros.add(new Word("cinco", "five", R.drawable.family_younger_sister));
+        numeros.add(new Word("seis", "six", R.drawable.family_younger_sister));
+        numeros.add(new Word("siete", "seven", R.drawable.family_younger_sister));
+        numeros.add(new Word("ocho", "eigth", R.drawable.family_younger_sister));
+        numeros.add(new Word("nueve", "nain", R.drawable.family_younger_sister));
         numeros.add(new Word("diez", "ten"));
         numeros.add(new Word("uno", "one", R.drawable.family_younger_sister));
         numeros.add(new Word("dos", "two", R.drawable.family_younger_sister));
@@ -92,14 +92,8 @@ public class FragmentB extends Fragment {
     }
 
     private void releaseMediaPlayer() {
-        // If the media player is not null, then it may be currently playing a sound.
         if (mediaPlayer != null) {
-            // Regardless of the current state of the media player, release its resources
-            // because we no longer need it.
             mediaPlayer.release();
-            // Set the media player back to null. For our code, we've decided that
-            // setting the media player to null is an easy way to tell that the media player
-            // is not configured to play an audio file at the moment.
             mediaPlayer = null;
         }
     }
